@@ -17,5 +17,6 @@ include_directories(${GTEST_INCLUDE_DIR})
 AUX_SOURCE_DIRECTORY(src TST_SRC_LOCAL)
 add_executable(AddessBookTest ${TST_SRC_LOCAL} ${TST_SRC})
 target_link_libraries(AddessBookTest -lpthread gtest gtest_main)
+install(TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 
 

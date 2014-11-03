@@ -41,4 +41,6 @@ include_directories(src)
 target_link_libraries(AddressBook ${GLIB2_LDFLAGS})
 
 add_test(AddressBook)
+install(TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/bin)
+
 
