@@ -32,8 +32,9 @@ include_directories(${GLIB2_INCLUDE_DIRS})
 
 add_executable (AddressBook
     src/main.cpp
-    src/AddressBook.cpp
-    src/Person.cpp)
+    src/Phone_AddressBook.cpp
+    src/Gmail_AddressBook.cpp
+    src/SIM_AddressBook.cpp)
 
 include_directories(src)
 

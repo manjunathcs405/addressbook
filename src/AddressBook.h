@@ -7,9 +7,9 @@ using namespace std;
 class AddressBook
 {
     public:
-        AddressBook();
-        virtual ~AddressBook();
-        virtual bool addContact()= 0
+        AddressBook(){ }
+        virtual ~AddressBook(){}
+        virtual bool addContact()= 0;
         virtual bool removeContact() = 0;
         virtual bool modifyContact() = 0;
         virtual bool searchContact() = 0;

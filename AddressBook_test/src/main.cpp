@@ -1,9 +1,10 @@
 #include <gtest/gtest.h>
-#include "AddressBook.h"
+#include "Phone_AddressBook.h"
 
 TEST(addContact, AddingContactSuccess) {
-    AddressBook addBk_obj;
-    ASSERT_TRUE(addBk_obj.addContact());
+    AddressBook *addbk = new Phone_AddressBook();
+    ASSERT_TRUE(addbk->addContact());
+    delete addbk;
 }
 
 int main(int argc, char **argv) {
