@@ -1,6 +1,7 @@
 #ifndef PERSON_H
 #define PERSON_H
 #include<iostream>
+using namespace std;
 
 class Person
 {
@@ -8,12 +9,12 @@ class Person
         Person();
         ~Person();
     private:
-        std::string name;
-        std::string mobileNo;
-        std::string emailId;
-        std::string address;
-        std::string groups;
-        bool fillDetails();
+        string name;
+        string mobileNo;
+        string emailId;
+        string address;
+        string groups;
+        bool fillDetails(string name, string mobileNo, string emailId, string groups);
         bool getDetails();
 };
 

@@ -1,4 +1,5 @@
 #include "Person.h"
+using namespace std;
 
 Person::Person():
     name(""),
@@ -12,7 +13,7 @@ Person::~Person()
 {
 
 }
-bool Person::fillDetails()
+bool Person::fillDetails(string name, string mobileNo, string emailId, string groups)
 {
     return true;
 }
