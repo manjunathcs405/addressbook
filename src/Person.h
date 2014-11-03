@@ -8,11 +8,11 @@ class Person
         Person();
         ~Person();
     private:
-        string name;
-        string mobileNo;
-        string emailId;
-        string address;
-        string groups;
+        std::string name;
+        std::string mobileNo;
+        std::string emailId;
+        std::string address;
+        std::string groups;
         bool fillDetails();
         bool getDetails();
 };

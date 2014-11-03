@@ -4,11 +4,11 @@
 #include<iostream>
 #include "Person.h"
 
-class addressBook
+class AddressBook
 {
     public:
-        addressBook();
-        ~addressBook();
+        AddressBook();
+        ~AddressBook();
         bool addContact();
         bool removeContact();
         bool modifyContact();

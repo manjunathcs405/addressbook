@@ -16,7 +16,7 @@ bool Person::fillDetails()
 {
     return true;
 }
-bool Person::getDetails();
+bool Person::getDetails()
 {
     return true;
 }
