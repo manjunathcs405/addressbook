@@ -2,15 +2,19 @@
 #define ADDRESS_BOOK
 
 #include<iostream>
-#include "Person.h"
+using namespace std;
 
 class AddressBook
 {
     public:
         AddressBook();
-        ~AddressBook();
-        bool addContact();
-        bool removeContact();
-        bool modifyContact();
+        virtual ~AddressBook();
+        virtual bool addContact()= 0
+        virtual bool removeContact() = 0;
+        virtual bool modifyContact() = 0;
+        virtual bool searchContact() = 0;
+    protected:
+        string name;
+        string number;
 };
 #endif
