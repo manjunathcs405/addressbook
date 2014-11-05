@@ -1,8 +1,5 @@
-#ifndef ADDRESS_BOOK
-#define ADDRESS_BOOK
-
-#include<iostream>
-using namespace std;
+#ifndef ADDRESS_BOOK_H
+#define ADDRESS_BOOK_H
 
 class AddressBook
 {
@@ -14,7 +11,7 @@ class AddressBook
         virtual bool modifyContact() = 0;
         virtual bool searchContact() = 0;
     protected:
-        string name;
-        string number;
+        std::string name;
+        std::string number;
 };
 #endif

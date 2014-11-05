@@ -11,8 +11,8 @@ class Phone_AddressBook : public AddressBook
         bool searchContact();
 
     private:
-        string address;
-        string rigntone;
-        string email;
+        std::string address;
+        std::string rigntone;
+        std::string email;
 };
 
